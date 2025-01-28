@@ -8,8 +8,11 @@ let count = 0;
 let draggedProduct = null;
 let offsetX = 0;
 let offsetY = 0;
+const initialPositions = {};  // Массив для хранения начальных позиций продуктов
 
 products.forEach(product => {
+    const rect = product.getBoundingClientRect();
+    initialPositions[product.id] = { top: rect.top, left: rect.left };
     product.addEventListener('dragstart', (event) => {
         event.dataTransfer.setData('text/plain', product.id);
     })
@@ -40,10 +43,9 @@ basket.addEventListener('drop', (event) => {
 })
 
 
-// Мобильные события для перетаскивания
 products.forEach(product => {
     product.addEventListener('touchstart', (event) => {
-        event.preventDefault();
+        event.preventDefault();  // предотвращаем стандартное поведение
         draggedProduct = product;
         const touch = event.touches[0];
         offsetX = touch.clientX - product.getBoundingClientRect().left;
@@ -54,6 +56,7 @@ products.forEach(product => {
     });
 
     product.addEventListener('touchmove', (event) => {
+        event.preventDefault();  // предотвращаем стандартное поведение, например, прокрутку
         if (draggedProduct) {
             const touch = event.touches[0];
             draggedProduct.style.left = `${touch.clientX - offsetX}px`;
@@ -65,8 +68,6 @@ products.forEach(product => {
         if (draggedProduct) {
             const touch = event.changedTouches[0];
             const basketRect = basket.getBoundingClientRect();
-
-            // Проверяем, попала ли точка в корзину
             const isInBasket = touch.clientX >= basketRect.left && touch.clientX <= basketRect.right &&
                 touch.clientY >= basketRect.top && touch.clientY <= basketRect.bottom;
 
@@ -77,7 +78,11 @@ products.forEach(product => {
                 draggedProduct.style.cursor = 'not-allowed';
                 draggedProduct.draggable = false;
             } else {
-                draggedProduct.style.position = 'static'; // Возвращаем на исходную позицию, если не в корзине
+                // Возвращаем на исходную позицию, если не в корзине
+                const initialPosition = initialPositions[draggedProduct.id];
+                draggedProduct.style.position = 'absolute';
+                draggedProduct.style.left = `${initialPosition.left}px`;
+                draggedProduct.style.top = `${initialPosition.top}px`;
             }
 
             if (count === 3) {
@@ -88,8 +93,6 @@ products.forEach(product => {
         }
     });
 });
-
-
 
 
 

@@ -16,13 +16,105 @@ body {
     height: 570px;
 }
 
-.section-one {
-    position: relative;
-    top: -310px;
-    left: -75px;
-    display: flex;
-    align-items: end;
-}
+/*.section-one {*/
+/*    position: relative;*/
+/*    top: -310px;*/
+/*    left: -75px;*/
+/*    display: flex;*/
+/*    align-items: end;*/
+/*}*/
+
+/*.product {*/
+/*    cursor: grab;*/
+/*}*/
+
+/*.wine {*/
+/*    position: absolute;*/
+/*    left: 92px;*/
+/*}*/
+
+/*.milk {*/
+/*    position: absolute;*/
+/*    left: 140px;*/
+/*}*/
+
+/*.cake {*/
+/*    position: absolute;*/
+/*    left: 180px;*/
+/*}*/
+
+/*.cheese {*/
+/*    position: absolute;*/
+/*    left: 230px;*/
+/*}*/
+
+
+/*.section-two {*/
+/*    position: relative;*/
+/*    top: -215px;*/
+/*    left: -75px;*/
+/*    display: flex;*/
+/*    align-items: end;*/
+/*}*/
+
+/*.beef {*/
+/*    position: absolute;*/
+/*    left: 80px;*/
+/*}*/
+
+/*.chicken {*/
+/*    position: absolute;*/
+/*    left: 140px;*/
+/*}*/
+
+/*.chips {*/
+/*    position: absolute;*/
+/*    left: 200px;*/
+/*}*/
+
+/*.basket-two .beef {*/
+/*    display: block;*/
+/*    position: static;*/
+/*}*/
+
+/*.basket-two .chicken {*/
+/*    display: block;*/
+/*    position: static;*/
+/*}*/
+
+/*.basket-two .chips {*/
+/*    display: block;*/
+/*    position: static;*/
+/*}*/
+
+/*.section-three {*/
+/*    position: relative;*/
+/*    top: -115px;*/
+/*    left: -75px;*/
+/*    display: flex;*/
+/*    align-items: end;*/
+/*}*/
+
+/*.pineapple {*/
+/*    position: absolute;*/
+/*    left: 85px;*/
+/*}*/
+
+/*.banana {*/
+/*    position: absolute;*/
+/*    left: 130px;*/
+/*}*/
+
+/*.apple {*/
+/*    position: absolute;*/
+/*    left: 190px;*/
+/*}*/
+
+/*.salad {*/
+/*    position: absolute;*/
+/*    left: 230px;*/
+/*}*/
+
 
 .product {
     cursor: grab;
@@ -30,90 +122,70 @@ body {
 
 .wine {
     position: absolute;
-    left: 92px;
+    left: 60px;
+    top: 0px;
 }
 
 .milk {
     position: absolute;
-    left: 140px;
+    left: 110px;
+    top: 35px;
 }
 
 .cake {
     position: absolute;
-    left: 180px;
+    left: 155px;
+    top: 85px;
 }
 
 .cheese {
     position: absolute;
-    left: 230px;
-}
-
-
-.section-two {
-    position: relative;
-    top: -215px;
-    left: -75px;
-    display: flex;
-    align-items: end;
+    left: 210px;
+    top: 90px;
 }
 
 .beef {
     position: absolute;
-    left: 80px;
+    left: 55px;
+    top: 170px;
 }
 
 .chicken {
     position: absolute;
-    left: 140px;
+    left: 105px;
+    top: 170px;
 }
 
 .chips {
     position: absolute;
-    left: 200px;
+    left: 175px;
+    top: 170px;
 }
-
-.basket-two .beef {
-    display: block;
-    position: static;
-}
-
-.basket-two .chicken {
-    display: block;
-    position: static;
-}
-
-.basket-two .chips {
-    display: block;
-    position: static;
-}
-
-.section-three {
-    position: relative;
-    top: -115px;
-    left: -75px;
-    display: flex;
-    align-items: end;
-}
-
 .pineapple {
     position: absolute;
-    left: 85px;
+    left: 55px;
+    top: 240px;
 }
 
 .banana {
     position: absolute;
-    left: 130px;
+    left: 100px;
+    top: 270px;
 }
 
 .apple {
     position: absolute;
-    left: 190px;
+    left: 155px;
+    top: 275px;
 }
 
 .salad {
     position: absolute;
-    left: 230px;
+    left: 190px;
+    top: 270px;
 }
+
+
 
 .basket {
     position: relative;
@@ -127,39 +199,74 @@ body {
     z-index: -1;
 }
 
+/*.basket .wine {*/
+/*    transform: translate(0px, -180px);*/
+
+/*}*/
+/*.basket .milk {*/
+/*    transform: translate(0px, -140px);*/
+/*}*/
+/*.basket .cake {*/
+/*    transform: translate(0px, -90px);*/
+/*}*/
+/*.basket .cheese {*/
+/*    transform: translate(-20px, -90px);*/
+/*}*/
+/*.basket .beef {*/
+/*    transform: translate(0px, -105px);*/
+/*}*/
+/*.basket .chicken {*/
+/*    transform: translate(0px, -97px);*/
+/*}*/
+/*.basket .chips {*/
+/*    transform: translate(0px, -100px);*/
+/*}*/
+/*.basket .pineapple {*/
+/*    transform: translate(0px, -130px);*/
+/*}*/
+/*.basket .banana {*/
+/*    transform: translate(0px, -100px);*/
+/*}*/
+/*.basket .apple {*/
+/*    transform: translate(0px, -90px);*/
+/*}*/
+/*.basket .salad {*/
+/*    transform: translate(-20px, -100px);*/
+/*}*/
+
 .basket .wine {
-    transform: translate(0px, -180px);
+    transform: translate(30px, 55px);
 
 }
 .basket .milk {
-    transform: translate(0px, -140px);
+    transform: translate(0px, 55px);
 }
 .basket .cake {
-    transform: translate(0px, -90px);
+    transform: translate(0px, 55px);
 }
 .basket .cheese {
-    transform: translate(-20px, -90px);
+    transform: translate(-20px, 58px);
 }
 .basket .beef {
-    transform: translate(0px, -105px);
+    transform: translate(10px, -40px);
 }
 .basket .chicken {
-    transform: translate(0px, -97px);
+    transform: translate(0px, -40px);
 }
 .basket .chips {
-    transform: translate(0px, -100px);
+    transform: translate(0px, -35px);
 }
 .basket .pineapple {
-    transform: translate(0px, -130px);
+    transform: translate(20px, -135px);
 }
 .basket .banana {
-    transform: translate(0px, -100px);
+    transform: translate(10px, -135px);
 }
 .basket .apple {
-    transform: translate(0px, -90px);
+    transform: translate(0px, -135px);
 }
 .basket .salad {
-    transform: translate(-20px, -100px);
+    transform: translate(-20px, -145px);
 }
 
 
@@ -204,39 +311,39 @@ body {
 }
 
 @media screen and (max-width: 340px) {
-    .basket .wine {
-        transform: translate(0px, -259px);
+    /*.basket .wine {*/
+    /*    transform: translate(0px, -259px);*/
 
-    }
-    .basket .milk {
-        transform: translate(0px, -282px);
-    }
-    .basket .cake {
-        transform: translate(0px, -282px);
-    }
-    .basket .cheese {
-        transform: translate(-20px, -90px);
-    }
-    .basket .beef {
-        transform: translate(0px, -157px);
-    }
-    .basket .chicken {
-        transform: translate(0px, -150px);
-    }
-    .basket .chips {
-        transform: translate(0px, -148px);
-    }
-    .basket .pineapple {
-        transform: translate(0px, -160px);
-    }
-    .basket .banana {
-        transform: translate(0px, -150px);
-    }
-    .basket .apple {
-        transform: translate(0px, -150px);
-    }
-    .basket .salad {
-        transform: translate(-20px, -150px);
-    }
+    /*}*/
+    /*.basket .milk {*/
+    /*    transform: translate(0px, -282px);*/
+    /*}*/
+    /*.basket .cake {*/
+    /*    transform: translate(0px, -282px);*/
+    /*}*/
+    /*.basket .cheese {*/
+    /*    transform: translate(-20px, -90px);*/
+    /*}*/
+    /*.basket .beef {*/
+    /*    transform: translate(0px, -157px);*/
+    /*}*/
+    /*.basket .chicken {*/
+    /*    transform: translate(0px, -150px);*/
+    /*}*/
+    /*.basket .chips {*/
+    /*    transform: translate(0px, -148px);*/
+    /*}*/
+    /*.basket .pineapple {*/
+    /*    transform: translate(0px, -160px);*/
+    /*}*/
+    /*.basket .banana {*/
+    /*    transform: translate(0px, -150px);*/
+    /*}*/
+    /*.basket .apple {*/
+    /*    transform: translate(0px, -150px);*/
+    /*}*/
+    /*.basket .salad {*/
+    /*    transform: translate(-20px, -150px);*/
+    /*}*/
 
 }
