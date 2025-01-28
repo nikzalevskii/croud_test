@@ -5,6 +5,7 @@ body {
 }
 
 .container {
+    margin: 0 auto;
     max-width: 300px;
     height: 600px;
     position: relative;
@@ -176,6 +177,43 @@ body {
     }
 }
 
+
+@media screen and (max-width: 1025px) {
+    .basket .wine {
+        transform: translate(-375px, -354px);
+
+    }
+    .basket .milk {
+        transform: translate(-375px, -350px);
+    }
+    .basket .cake {
+        transform: translate(-375px, -375px);
+    }
+    .basket .cheese {
+        transform: translate(-375px, -365px);
+    }
+    .basket .beef {
+        transform: translate(-375px, -350px);
+    }
+    .basket .chicken {
+        transform: translate(-375px, -360px);
+    }
+    .basket .chips {
+        transform: translate(-375px, -350px);
+    }
+    .basket .pineapple {
+        transform: translate(-375px, -360px);
+    }
+    .basket .banana {
+        transform: translate(-375px, -360px);
+    }
+    .basket .apple {
+        transform: translate(-375px, -360px);
+    }
+    .basket .salad {
+        transform: translate(-375px, -365px);
+    }
+}
 
 @media screen and (max-width: 769px) {
     .basket .wine {
