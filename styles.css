@@ -16,105 +16,6 @@ body {
     height: 570px;
 }
 
-/*.section-one {*/
-/*    position: relative;*/
-/*    top: -310px;*/
-/*    left: -75px;*/
-/*    display: flex;*/
-/*    align-items: end;*/
-/*}*/
-
-/*.product {*/
-/*    cursor: grab;*/
-/*}*/
-
-/*.wine {*/
-/*    position: absolute;*/
-/*    left: 92px;*/
-/*}*/
-
-/*.milk {*/
-/*    position: absolute;*/
-/*    left: 140px;*/
-/*}*/
-
-/*.cake {*/
-/*    position: absolute;*/
-/*    left: 180px;*/
-/*}*/
-
-/*.cheese {*/
-/*    position: absolute;*/
-/*    left: 230px;*/
-/*}*/
-
-
-/*.section-two {*/
-/*    position: relative;*/
-/*    top: -215px;*/
-/*    left: -75px;*/
-/*    display: flex;*/
-/*    align-items: end;*/
-/*}*/
-
-/*.beef {*/
-/*    position: absolute;*/
-/*    left: 80px;*/
-/*}*/
-
-/*.chicken {*/
-/*    position: absolute;*/
-/*    left: 140px;*/
-/*}*/
-
-/*.chips {*/
-/*    position: absolute;*/
-/*    left: 200px;*/
-/*}*/
-
-/*.basket-two .beef {*/
-/*    display: block;*/
-/*    position: static;*/
-/*}*/
-
-/*.basket-two .chicken {*/
-/*    display: block;*/
-/*    position: static;*/
-/*}*/
-
-/*.basket-two .chips {*/
-/*    display: block;*/
-/*    position: static;*/
-/*}*/
-
-/*.section-three {*/
-/*    position: relative;*/
-/*    top: -115px;*/
-/*    left: -75px;*/
-/*    display: flex;*/
-/*    align-items: end;*/
-/*}*/
-
-/*.pineapple {*/
-/*    position: absolute;*/
-/*    left: 85px;*/
-/*}*/
-
-/*.banana {*/
-/*    position: absolute;*/
-/*    left: 130px;*/
-/*}*/
-
-/*.apple {*/
-/*    position: absolute;*/
-/*    left: 190px;*/
-/*}*/
-
-/*.salad {*/
-/*    position: absolute;*/
-/*    left: 230px;*/
-/*}*/
-
 
 .product {
     cursor: grab;
@@ -199,41 +100,6 @@ body {
     z-index: -1;
 }
 
-/*.basket .wine {*/
-/*    transform: translate(0px, -180px);*/
-
-/*}*/
-/*.basket .milk {*/
-/*    transform: translate(0px, -140px);*/
-/*}*/
-/*.basket .cake {*/
-/*    transform: translate(0px, -90px);*/
-/*}*/
-/*.basket .cheese {*/
-/*    transform: translate(-20px, -90px);*/
-/*}*/
-/*.basket .beef {*/
-/*    transform: translate(0px, -105px);*/
-/*}*/
-/*.basket .chicken {*/
-/*    transform: translate(0px, -97px);*/
-/*}*/
-/*.basket .chips {*/
-/*    transform: translate(0px, -100px);*/
-/*}*/
-/*.basket .pineapple {*/
-/*    transform: translate(0px, -130px);*/
-/*}*/
-/*.basket .banana {*/
-/*    transform: translate(0px, -100px);*/
-/*}*/
-/*.basket .apple {*/
-/*    transform: translate(0px, -90px);*/
-/*}*/
-/*.basket .salad {*/
-/*    transform: translate(-20px, -100px);*/
-/*}*/
-
 .basket .wine {
     transform: translate(30px, 55px);
 
@@ -310,6 +176,81 @@ body {
     }
 }
 
+
+@media screen and (max-width: 769px) {
+    .basket .wine {
+        transform: translate(0px, -354px);
+
+    }
+    .basket .milk {
+        transform: translate(0px, -350px);
+    }
+    .basket .cake {
+        transform: translate(0px, -375px);
+    }
+    .basket .cheese {
+        transform: translate(-20px, -365px);
+    }
+    .basket .beef {
+        transform: translate(0px, -350px);
+    }
+    .basket .chicken {
+        transform: translate(0px, -360px);
+    }
+    .basket .chips {
+        transform: translate(0px, -350px);
+    }
+    .basket .pineapple {
+        transform: translate(0px, -360px);
+    }
+    .basket .banana {
+        transform: translate(0px, -360px);
+    }
+    .basket .apple {
+        transform: translate(0px, -360px);
+    }
+    .basket .salad {
+        transform: translate(-20px, -365px);
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .basket .wine {
+        transform: translate(0px, -354px);
+
+    }
+    .basket .milk {
+        transform: translate(0px, -350px);
+    }
+    .basket .cake {
+        transform: translate(0px, -375px);
+    }
+    .basket .cheese {
+        transform: translate(-20px, -365px);
+    }
+    .basket .beef {
+        transform: translate(0px, -350px);
+    }
+    .basket .chicken {
+        transform: translate(0px, -360px);
+    }
+    .basket .chips {
+        transform: translate(0px, -350px);
+    }
+    .basket .pineapple {
+        transform: translate(0px, -360px);
+    }
+    .basket .banana {
+        transform: translate(0px, -360px);
+    }
+    .basket .apple {
+        transform: translate(0px, -360px);
+    }
+    .basket .salad {
+        transform: translate(-20px, -365px);
+    }
+}
+
 @media screen and (max-width: 340px) {
     .basket .wine {
         transform: translate(0px, -354px);
@@ -345,5 +286,5 @@ body {
     .basket .salad {
         transform: translate(-20px, -365px);
     }
-
 }
+
